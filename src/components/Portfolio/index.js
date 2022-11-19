@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Voluntiers from '../../assets/images/Voluntiers.png';
-import {
-    faAngular,
-    faCss3,
-    faGitAlt,
-    faHtml5,
-    faJsSquare,
-    faReact,
-  } from '@fortawesome/free-brands-svg-icons'
-  import Loader from 'react-loaders'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Bookbean from '../../assets/images/BookBean.png';
+import Gumbo from '../../assets/images/GumbosGame.png';
+import Loader from 'react-loaders';
 import "./index.scss";
 
 const Portfolio = () => {
@@ -18,61 +11,95 @@ const Portfolio = () => {
 
     useEffect(() => {
         setTimeout(() => {
-          setLetterClass('text-animate-hover')
+            setLetterClass('text-animate-hover')
         }, 3000)
-      }, [])
+    }, [])
 
     return (
         <>
-<div className="container about-page">
-  <div className="text-zone">
-    <h1>
-      <AnimatedLetters
-        letterClass={letterClass}
-        strArray={['M', 'y', '', 'W', 'o', 'r', 'k']}
-        idx={15}
-      />
-    </h1>
-    <p>
-      Voluntiers - Volunteer Management MERN Stack project
-      An intuitive app that lets users view and volunteer for 
-    </p>
-    <p align="LEFT">
-      I'm quiet confident, naturally curious, and perpetually working on
-      improving my chops one design problem at a time.
-    </p>
-    <p>
-      If I need to define myself in one sentence that would be a family
-      person, father of a beautiful daughter, a sports fanatic,
-      photography enthusiast, and tech-obsessed!!!
-    </p>
-  </div>
+            <div className="container portfolio-page">
+                <h1 className="page-title">
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={['M', 'y', '', 'W', 'o', 'r', 'k']}
+                        idx={15}
+                    />
+                </h1>
+                <div>
+                    <div className="images-container">
+                        <div className="image-box">
+                            <img src={Voluntiers}
+                                className="portfolio-image"
+                                alt="portfolio" />
+                            <div className="content">
+                                <p className="title">Voluntiers - App and API</p>
+                                <h4 className="description">Served as tech-lead and backend developer for this intuitive app that lets users view and volunteer for service opportunities in
+                                    their community. The app also allows volunteers to track their own time and see leaderboards for service hours.
+                                </h4>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://voluntiers.herokuapp.com/")}
+                                >View</button>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://github.com/AidenValley/VolunTiers")}
+                                >Github</button> 
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://github.com/CatW-M/voluntiers-api")}
+                                >API Git</button> 
+                            </div>
+                        </div>
 
-  <div className="stage-cube-cont">
-    <div className="cubespinner">
-      <div className="face1">
-        <img src={Voluntiers} color="#DD0031" />
-      </div>
-      <div className="face2">
-        <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-      </div>
-      <div className="face3">
-        <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-      </div>
-      <div className="face4">
-        <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-      </div>
-      <div className="face5">
-        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-      </div>
-      <div className="face6">
-        <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-      </div>
-    </div>
-  </div>
-</div>
-<Loader type="pacman" />
-</>
+                    </div>
+                </div>
+                <div>
+                    <div className="images-container">
+                        <div className="image-box">
+                            <img src={Bookbean}
+                                className="portfolio-image"
+                                alt="portfolio" />
+                            <div className="content">
+                                <p className="title">BookBean</p>
+                                <h4 className="description">Node.js/PostgresSQL book search and coffee recommendation application with Express authentication template using Passport + Flash messages + custom middleware. Integration with Google Books Volumes API.</h4>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://bookbean2.herokuapp.com/")}
+                                >View</button>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://github.com/CatW-M/bookbean2")}
+                                >Github</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div className="images-container">
+                        <div className="image-box">
+                            <img src={Gumbo}
+                                className="portfolio-image"
+                                alt="portfolio" />
+                            <div className="content">
+                                <p className="title">Gumbo's Game</p>
+                                <h4 className="description">Retro-style maze game created with Vanilla Javascript (ES6), HTML5, and CSS.</h4>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://catw-m.github.io/gumbosgame_SEIRFX621_project1/")}
+                                >View</button>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://github.com/CatW-M/gumbosgame_SEIRFX621_project1")}
+                                >Github</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <Loader type="pacman" />
+        </>
 
     )
 }

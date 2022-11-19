@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import {
-  faAngular,
-  faCss3,
-  faGitAlt,
+  faAmazon,
+  faPython,
+  faGithub,
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+} from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../AnimatedLetters';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ProfilePic from '../../assets/images/recphoto.jpg'
 import './index.scss'
 
 const About = () => {
@@ -34,27 +35,30 @@ const About = () => {
           </h1>
           <p>
             I have always enjoyed breaking big, complex things down into smaller, more manageable pieces. I am a science-minded
-            individual, looking for 
+            individual who values sound logic, data, and community. I am a Google Ninja and a JavaScript nerd.
           </p>
           <p align="LEFT">
-            I am not afraid to try new things
+            I am not afraid to try new things, like building this portfolio app. I followed an excellent tutorial by <a
+            href="https://www.youtube.com/watch?v=ESHaail1eGc"
+            target="_blank"
+            rel="noreferrer"
+          >Slobodan</a> to create this. If I don't know something now, I will find the resources to get the job done or problem solved. I am continually learning and teaching new technologies.
           </p>
           <p>
-            When I am not working on code, I enjoy spending time with my family and reading anything I can get my hands on. I 
-            am
+            When I am not working on code, I enjoy spending time with my family and reading anything I can get my hands on. 
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faAmazon} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faPython} color="#28A4D9" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
@@ -63,12 +67,15 @@ const About = () => {
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
             </div>
           </div>
         </div>
       </div>
       <Loader type="pacman" />
+          <div className='image-about'>
+            <img src={ProfilePic} alt="pic of Catherine" />
+          </div>
     </>
   )
 }
