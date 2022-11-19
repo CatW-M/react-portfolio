@@ -3,7 +3,6 @@ import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
-import ProfilePic from '../../assets/images/recphoto.jpg'
 import './index.scss'
 
 const Contact = () => {
@@ -43,9 +42,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <div className='image-about'>
-                    <img src={ProfilePic} alt="pic of Catherine" />
-                </div>
+          
           <p>
            Please let me know if you have questions or just want to say "hello!"
           </p>

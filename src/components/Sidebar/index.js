@@ -15,6 +15,7 @@ import {
   faComputer,
   faBars,
   faClose,
+  faCode,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
@@ -36,7 +37,9 @@ const Sidebar = () => {
         <NavLink end activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faComputer} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#ffd700" size='3x' className='close-icon' />
+        <NavLink end activeclassname="active" className="skills-link" to="/skills" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+        </NavLink>
         <NavLink end activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>

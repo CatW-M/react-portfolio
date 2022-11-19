@@ -92,7 +92,13 @@
 
         a.portfolio-link {
             &:after {
-                content: 'PORTFOLIO';
+                content: 'PROJECTS';
+            }
+        }
+
+        a.skills-link {
+            &:after {
+                content: 'SKILLS';
             }
         }
 
