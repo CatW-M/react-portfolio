@@ -105,7 +105,8 @@
   
       &.contact-page,
       &.about-page,
-      &.portfolio-page {
+      &.portfolio-page,
+      &.skills-page {
         .text-zone {
           position: initial;
           transform: none;
@@ -127,8 +128,8 @@
         }
   
         .image-box {
-          height: 200px;
-          max-width: calc(50% - 10px);
+          height: 250px;
+          // max-width: calc(50% - 10px);
         }
       }
     }

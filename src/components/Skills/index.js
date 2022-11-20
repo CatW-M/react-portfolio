@@ -1,13 +1,5 @@
 import { useEffect, useState } from 'react';
 import {
-    faNodeJs,
-    faPython,
-    faCss3,
-    faHtml5,
-    faJsSquare,
-    faReact,
-    faMastodon,
-    faCanadianMapleLeaf,
     faResearchgate
 } from '@fortawesome/free-brands-svg-icons';
 import AnimatedLetters from '../AnimatedLetters';
@@ -27,19 +19,19 @@ const Skills = () => {
         {
             title: "Programming Languages",
             list: [
-                { name: "JavaScript", badge: {faJsSquare}, nameColor: "#d9c548" },
-                { name: "Python", badge: {faPython} },
-                { name: "HTML", badge: {faHtml5}, nameColor: "orange" },
-                { name: "CSS", badge: {faCss3} },
-                { name: "SQL", badge: {faMastodon}, badgeColor: "lightgray" }
+                { name: "JavaScript", textColor: "black" },
+                { name: "Python", nameColor: "orange" },
+                { name: "HTML", nameColor: "yellow", textColor: "black" },
+                { name: "CSS", nameColor: "orange" },
+                { name: "SQL", nameColor: "#4fd6cf" }
             ],
         },
         {
             title: "Spoken Languages",
             list: [
                 { name: "English", textColor: "black" },
-                { name: "German", textColor: "black" },
-                { name: "Korean (beg.)", textColor: "black" }
+                { name: "German", nameColor: "#4fd6cf" },
+                { name: "Korean (beg.)", nameColor: "orange" }
             ]
         }
     ]
@@ -48,18 +40,18 @@ const Skills = () => {
         {
             title: "Web Development",
             list: [
-                { name: "React", badge: {faReact}, nameColor: "#4fd6cf" },
-                { name: "Django", badge: {faCanadianMapleLeaf}, nameColor: "green" },
-                { name: "Node", badge: {faNodeJs}, badgeColor: "lightgray" },
-                { name: "Express", badge: {faNodeJs}, badgeColor: "beige", nameColor: "#52a854" },
+                { name: "React", nameColor: "#4fd6cf" },
+                { name: "Django", nameColor: "green" },
+                { name: "Node", nameColor: "lightgray" },
+                { name: "Express", nameColor: "#52a854" },
             ],
         },
         {
-            title: "Database",
+            title: "Databases",
             list: [
-                { name: "SQLite", badge: {faMastodon}, badgeColor: "lightgray" },
-                { name: "MongoDB", badge: {faCanadianMapleLeaf}, nameColor: "#52a854" },
-                { name: "PostgreSQL", badge: {faMastodon} }
+                { name: "SQLite", nameColor: "lightgray" },
+                { name: "MongoDB", nameColor: "green" },
+                { name: "PostgreSQL", nameColor: "orange" }
             ]
         },
         {
@@ -74,25 +66,24 @@ const Skills = () => {
         {
             title: "Project Management Methods",
             list: [
-                { name: "Agile", textColor: "black" },
-                { name: "Scrum", textColor: "black" },
-                { name: "Kanban", textColor: "black" }
+                { name: "Agile", nameColor: "orange" },
+                { name: "Scrum", nameColor: "lightgray" }
             ],
         },
         {
             title: "Universal Skills",
             list: [
-                { name: "Problem-Solving", textColor: "black" },
-                { name: "Time Management and Prioritization", textColor: "black" },
-                { name: "Expansion Mindset", textColor: "black" },
-                { name: "Communication", textColor: "black" },
-                { name: "Collaboration", textColor: "black" }
+                { name: "Problem-Solving", nameColor: "orange" },
+                { name: "Time Management and Prioritization", nameColor: "green" },
+                { name: "Expansion Mindset", nameColor: "#4fd6cf" },
+                { name: "Communication", nameColor: "darkgrey" },
+                { name: "Collaboration", nameColor: "yellow" }
             ]
         }
     ]
 
     return (
-        <div className="container about-page">
+        <div className="container-skills">
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters
@@ -101,15 +92,9 @@ const Skills = () => {
                         idx={15}
                     />
                 </h1>
-                <div className="headerContainer">
-                    <div className="header">
-                        <img className="headerIcon" src={faJsSquare} alt="" />
-                        <p className="headerTitle" >Skill</p>
-                    </div>
-                    <div className="divider"></div>
                     <div className="contentContainer">
                         <div className="contentSkill">
-                            <div className="content__left">
+                            <div className="column">
                                 <div className="colTitle">LANGUAGES</div>
                                 {
                                     languages.map((lanType, idx) => (
@@ -118,10 +103,7 @@ const Skills = () => {
                                             {
                                                 lanType.list.map((entry, i) => (
                                                     <div className="badge">
-                                                        {
-                                                            entry.badge && <img className="skillbadge" style={entry.badgeColor && { backgroundColor: entry.badgeColor }} src={entry.badge && entry.badge} alt="" />
-                                                        }
-                                                        <p key={i} style={entry.textColor ? { backgroundColor: "transparent", color: entry.textColor } : { backgroundColor: entry.nameColor }} className="skillEntry">{entry.name}</p>
+                                                        <p key={i} style={entry.textColor ? { backgroundColor: "#7cfc10", color: entry.textColor } : { backgroundColor: entry.nameColor }} className="skillEntry">{entry.name}</p>
                                                     </div>
                                                 ))
                                             }<br></br>
@@ -129,7 +111,7 @@ const Skills = () => {
                                     ))
                                 }
                             </div>
-                            <div className="content__mid">
+                            <div className="column">
                                 <div className="colTitle">TOOLS/FRAMEWORKS</div>
                                 {
                                     toolsFrameworks.map((subType, idx) => (
@@ -149,7 +131,7 @@ const Skills = () => {
                                     ))
                                 }
                             </div>
-                            <div className="content__right">
+                            <div className="column">
                                 <div className="colTitle">OTHERS</div>
                                 {
                                     others.map((subType, idx) => (
@@ -171,7 +153,6 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
                 </div>
                 )

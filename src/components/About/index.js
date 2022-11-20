@@ -10,7 +10,7 @@ import {
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import guitar from '../../assets/images/guitar.png'
 import './index.scss'
 
 const About = () => {
@@ -34,18 +34,19 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I have always enjoyed breaking big, complex things down into smaller, more manageable pieces. I am a science-minded
-                        individual who values sound logic, data, and community. I am a Google Ninja and a JavaScript nerd.
+                        I enjoy breaking big, complex things down into smaller, more manageable pieces - you could say I have a recursive approach to problems. My methodical approach, and affection for Javascript, led me to 
+                        this field. I will complete a 6-month software engineering immersive bootcamp in December 2022, one of the best decisions I've made in my career. 
                     </p>
                     <p align="LEFT">
-                        I am not afraid to try new things, like building this portfolio app. I followed an excellent tutorial by <a
-                            href="https://www.youtube.com/watch?v=ESHaail1eGc"
-                            target="_blank"
-                            rel="noreferrer"
-                        >Slobodan</a> to create this. If I don't know something now, I will find the resources to get the job done or problem solved. I am continually learning and teaching new technologies.
+                    I will find the resources to get the job done or problem solved. I am looking to join an organization where my strong work-ethic, unique background, and strong technical skills will be valued. My previous experience as a high school science teacher has 
+                        made me an expert at time-management, organization, and the ability to manage people. 
+                
+
+                    
                     </p>
                     <p>
-                        When I am not working on code, I enjoy spending time with my family and reading anything I can get my hands on.
+                     When I am not working on code, I enjoy spending time with my family, playing guitar, and reading anything I can get my hands on.<br />
+                        <img src={guitar} height="400" alt="seattle guitar" />
                     </p>
                 </div>
 

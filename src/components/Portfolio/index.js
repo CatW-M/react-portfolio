@@ -33,8 +33,10 @@ const Portfolio = () => {
                                 alt="portfolio" />
                             <div className="content">
                                 <p className="title">Voluntiers - App and API</p>
-                                <h4 className="description">Served as tech-lead and backend developer for this intuitive app that lets users view and volunteer for service opportunities in
-                                    their community. The app also allows volunteers to track their own time and see leaderboards for service hours.
+                                <h4 className="description">Served as tech-lead and backend developer for this intuitive app 
+                                that lets users view and volunteer for service 
+                                opportunities in their community. Volunteers track their own time and see leaderboards for 
+                                service hours.
                                 </h4>
                                 <button
                                     className="btn"
