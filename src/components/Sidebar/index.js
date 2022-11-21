@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './index.scss';
 import Logo from '../../assets/images/Logo1.png';
 import LogoSubTitle from '../../assets/images/Sublogo.png';
+import Resume from '../../assets/images/WheelerMushlinResume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -16,6 +17,7 @@ import {
   faBars,
   faClose,
   faCode,
+  faDownload
 } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
@@ -43,6 +45,9 @@ const Sidebar = () => {
         <NavLink end activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <a activeclassname="active" className="resume-link" href={Resume} download onClick={() => setShowNav(false)}>
+        <FontAwesomeIcon icon={faDownload} color="#4d4d4e" />
+        </a>
         <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#ffd700" size='3x' className='close-icon' />
         
       </nav>
