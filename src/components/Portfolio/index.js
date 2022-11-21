@@ -27,7 +27,7 @@ const Portfolio = () => {
                 </h1>
                 <div>
                     <div className="images-container">
-                        <div className="image-box">
+                        <div className="image-box-left">
                             <img src={Voluntiers}
                                 className="portfolio-image"
                                 alt="portfolio" />
@@ -52,7 +52,7 @@ const Portfolio = () => {
                                 >API Git</button>
                             </div>
                         </div>
-                        <div className="image-box">
+                        <div className="image-box-mid">
                             <img src={Bookbean}
                                 className="portfolio-image"
                                 alt="portfolio" />
@@ -69,7 +69,7 @@ const Portfolio = () => {
                                 >Github</button>
                             </div>
                         </div>
-                        <div className="image-box">
+                        <div className="image-box-right">
                             <img src={Gumbo}
                                 className="portfolio-image"
                                 alt="portfolio" />
