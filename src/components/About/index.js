@@ -46,6 +46,8 @@ const About = () => {
                     </p>
                     <p>
                      When I am not working on code, I enjoy spending time with my family, playing guitar, and reading anything I can get my hands on.<br />
+                    </p>
+                    <p align="RIGHT">
                         <img src={guitar} height="400" alt="seattle guitar" />
                     </p>
                 </div>

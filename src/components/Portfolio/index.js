@@ -21,7 +21,7 @@ const Portfolio = () => {
                 <h1 className="page-title">
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={['M', 'y', '', 'W', 'o', 'r', 'k']}
+                        strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
                         idx={15}
                     />
                 </h1>
@@ -32,11 +32,11 @@ const Portfolio = () => {
                                 className="portfolio-image"
                                 alt="portfolio" />
                             <div className="content">
-                                <p className="title">Voluntiers - App and API</p>
-                                <h4 className="description">Served as tech-lead and backend developer for this intuitive app 
-                                that lets users view and volunteer for service 
-                                opportunities in their community. Volunteers track their own time and see leaderboards for 
-                                service hours.
+                                <p className="title">Voluntiers - MERN Stack</p>
+                                <h4 className="description">Served as tech-lead and backend developer for this intuitive app
+                                    that lets users view and volunteer for service
+                                    opportunities in their community. Volunteers track their own time and see leaderboards for
+                                    service hours.
                                 </h4>
                                 <button
                                     className="btn"
@@ -45,25 +45,20 @@ const Portfolio = () => {
                                 <button
                                     className="btn"
                                     onClick={() => window.open("https://github.com/AidenValley/VolunTiers")}
-                                >Github</button> 
+                                >Github</button>
                                 <button
                                     className="btn"
                                     onClick={() => window.open("https://github.com/CatW-M/voluntiers-api")}
-                                >API Git</button> 
+                                >API Git</button>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-                <div>
-                    <div className="images-container">
                         <div className="image-box">
                             <img src={Bookbean}
                                 className="portfolio-image"
                                 alt="portfolio" />
                             <div className="content">
                                 <p className="title">BookBean</p>
-                                <h4 className="description">Node.js/PostgresSQL book search and coffee recommendation application with Express authentication template using Passport + Flash messages + custom middleware. Integration with Google Books Volumes API.</h4>
+                                <h4 className="description">Node.js/PostgreSQL book search and coffee recommendation application with Express authentication template using Passport + Flash messages + custom middleware. Integration with Google Books Volumes API.</h4>
                                 <button
                                     className="btn"
                                     onClick={() => window.open("https://bookbean2.herokuapp.com/")}
@@ -74,11 +69,6 @@ const Portfolio = () => {
                                 >Github</button>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-                <div>
-                    <div className="images-container">
                         <div className="image-box">
                             <img src={Gumbo}
                                 className="portfolio-image"
@@ -96,7 +86,6 @@ const Portfolio = () => {
                                 >Github</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
