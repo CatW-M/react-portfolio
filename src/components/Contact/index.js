@@ -6,6 +6,10 @@ import profile from '../../assets/images/Profileyard.png';
 
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+const ServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const TemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const UserId = process.env.REACT_APP_EMAILJS_USER_ID;
+
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -21,7 +25,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_oqogwdq', 'template_tiif9fd', form.current, 'BZC6d39ub7ua_6bs8')
+      .sendForm({ ServiceId }, { TemplateId }, form.current, { UserId })
       .then(
         () => {
           alert('Message successfully sent!')
