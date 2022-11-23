@@ -67,7 +67,8 @@ const Skills = () => {
             title: "Project Management Methods",
             list: [
                 { name: "Agile", nameColor: "orange" },
-                { name: "Scrum", nameColor: "lightgray" }
+                { name: "Scrum", nameColor: "lightgray" },
+                { name: "Slack", nameColor: "lightblue" }
             ],
         },
         {
