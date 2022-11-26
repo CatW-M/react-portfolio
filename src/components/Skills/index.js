@@ -2,11 +2,14 @@ import { useEffect, useState } from 'react';
 import agilebadge from '../../assets/images/agile.png';
 import AnimatedLetters from '../AnimatedLetters';
 import css from '../../assets/images/css.png';
+import german from '../../assets/images/deutch.png';
+import english from '../../assets/images/english.png';
 import django from '../../assets/images/django.png';
 import express from '../../assets/images/express.svg';
 import github from '../../assets/images/github.png';
 import htmlbadge from '../../assets/images/html.png';
 import javascript from '../../assets/images/javascript.png';
+import korean from '../../assets/images/korean.png';
 import lucidchart from '../../assets/images/lucidchart.png';
 import mongo from '../../assets/images/mongodb.png';
 import node from '../../assets/images/node.png';
@@ -45,6 +48,14 @@ const Skills = () => {
                 { name: "MongoDB", badge: mongo, nameColor: "green" },
                 { name: "PostgreSQL", badge: postgres }
             ]
+        },
+        {
+            title: "Spoken Languages",
+            list: [
+                { name: "English", badge: english },
+                { name: "German", badge: german },
+                { name: "Korean", badge: korean }
+            ]
         }
         
     ]
@@ -78,7 +89,17 @@ const Skills = () => {
                 { name: "Scrum", badge: scrum, nameColor: "green" },
                 { name: "Slack", badge: slack }
             ],
-        }
+        },
+        {
+            title: "Universal Skills",
+            list: [
+                { name: "Problem-Solving", nameColor: "orange" },
+                { name: "Time Management", nameColor: "green" },
+                { name: "Expansion Mindset", nameColor: "#4fd6cf" },
+                { name: "Communication", nameColor: "darkgrey" },
+                { name: "Collaboration", nameColor: "yellow" }
+            ]
+            },
     ]
 
     return (
