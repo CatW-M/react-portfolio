@@ -1,9 +1,22 @@
 import { useEffect, useState } from 'react';
-import {
-    faResearchgate
-} from '@fortawesome/free-brands-svg-icons';
+import agilebadge from '../../assets/images/agile.png';
 import AnimatedLetters from '../AnimatedLetters';
-
+import css from '../../assets/images/css.png';
+import django from '../../assets/images/django.png';
+import express from '../../assets/images/express.svg';
+import github from '../../assets/images/github.png';
+import htmlbadge from '../../assets/images/html.png';
+import javascript from '../../assets/images/javascript.png';
+import lucidchart from '../../assets/images/lucidchart.png';
+import mongo from '../../assets/images/mongodb.png';
+import node from '../../assets/images/node.png';
+import postgres from '../../assets/images/postgresql.png';
+import postman from '../../assets/images/postman.png';
+import python from '../../assets/images/python.png';
+import reactbadge from '../../assets/images/react.png';
+import scrum from '../../assets/images/scrum.png';
+import slack from '../../assets/images/slack.png'
+import sql from '../../assets/images/icons8-sql-64.png';
 import './index.scss'
 
 const Skills = () => {
@@ -19,45 +32,39 @@ const Skills = () => {
         {
             title: "Programming Languages",
             list: [
-                { name: "JavaScript", textColor: "black" },
-                { name: "Python", nameColor: "orange" },
-                { name: "HTML", nameColor: "yellow", textColor: "black" },
-                { name: "CSS", nameColor: "orange" },
-                { name: "SQL", nameColor: "#4fd6cf" }
+                { name: "JavaScript", badge: javascript, nameColor: "#d9c548" },
+                { name: "Python", badge: python },
+                { name: "HTML", badge: htmlbadge, nameColor: "orange" },
+                { name: "CSS", badge: css },
+                { name: "SQL", badge: sql, badgeColor: "lightgray" }
             ],
         },
         {
-            title: "Spoken Languages",
+            title: "Databases",
             list: [
-                { name: "English", textColor: "black" },
-                { name: "German", nameColor: "#4fd6cf" },
-                { name: "Korean (beg.)", nameColor: "orange" }
+                { name: "MongoDB", badge: mongo, nameColor: "green" },
+                { name: "PostgreSQL", badge: postgres }
             ]
         }
+        
     ]
 
     const toolsFrameworks = [
         {
             title: "Web Development",
             list: [
-                { name: "React", nameColor: "#4fd6cf" },
-                { name: "Django", nameColor: "green" },
-                { name: "Node", nameColor: "lightgray" },
-                { name: "Express", nameColor: "#52a854" },
+                { name: "React", badge: reactbadge, nameColor: "#4fd6cf" },
+                { name: "Django", badge: django, nameColor: "green" },
+                { name: "Node", badge: node },
+                { name: "Express", badge: express, nameColor: "#52a854" },
+                { name: "Postman", badge: postman }
             ],
         },
-        {
-            title: "Databases",
-            list: [
-                { name: "SQLite", nameColor: "lightgray" },
-                { name: "MongoDB", nameColor: "green" },
-                { name: "PostgreSQL", nameColor: "orange" }
-            ]
-        },
+       
         {
             title: "UI/UX Design",
             list: [
-                { name: "Lucidchart", badge: {faResearchgate}, badgeColor: "lightgray", nameColor: "orange" }
+                { name: "Lucidchart", badge: lucidchart, badgeColor: "lightgray", nameColor: "orange" }
             ]
         }
     ]
@@ -66,20 +73,11 @@ const Skills = () => {
         {
             title: "Project Management Methods",
             list: [
-                { name: "Agile", nameColor: "orange" },
-                { name: "Scrum", nameColor: "lightgray" },
-                { name: "Slack", nameColor: "lightblue" }
+                { name: "Agile", badge: agilebadge },
+                { name: "Github", badge: github },
+                { name: "Scrum", badge: scrum, nameColor: "green" },
+                { name: "Slack", badge: slack }
             ],
-        },
-        {
-            title: "Universal Skills",
-            list: [
-                { name: "Problem-Solving", nameColor: "orange" },
-                { name: "Time Management and Prioritization", nameColor: "green" },
-                { name: "Expansion Mindset", nameColor: "#4fd6cf" },
-                { name: "Communication", nameColor: "darkgrey" },
-                { name: "Collaboration", nameColor: "yellow" }
-            ]
         }
     ]
 
@@ -93,70 +91,73 @@ const Skills = () => {
                         idx={15}
                     />
                 </h1>
-                    <div className="contentContainer">
-                        <div className="contentSkill">
-                            <div className="column">
-                                <div className="colTitle">LANGUAGES</div>
-                                {
-                                    languages.map((lanType, idx) => (
-                                        <>
-                                            <p key={idx} className="colSubTitle">{lanType.title}</p>
-                                            {
-                                                lanType.list.map((entry, i) => (
-                                                    <div className="badge">
-                                                        <p key={i} style={entry.textColor ? { backgroundColor: "#7cfc10", color: entry.textColor } : { backgroundColor: entry.nameColor }} className="skillEntry">{entry.name}</p>
-                                                    </div>
-                                                ))
-                                            }<br></br>
-                                        </>
-                                    ))
-                                }
-                            </div>
-                            <div className="column">
-                                <div className="colTitle">TOOLS/FRAMEWORKS</div>
-                                {
-                                    toolsFrameworks.map((subType, idx) => (
-                                        <>
-                                            <p key={idx} className="colSubTitle">{subType.title}</p>
-                                            {
-                                                subType.list.map((entry, i) => (
-                                                    <div className="badge">
-                                                        {
-                                                            entry.badge && <img className="skillbadge" style={entry.badgeColor && { backgroundColor: entry.badgeColor }} src={entry.badge && entry.badge} alt="" />
-                                                        }
-                                                        <p key={i} style={entry.textColor ? { backgroundColor: "transparent", color: entry.textColor } : { backgroundColor: entry.nameColor }} className="skillEntry">{entry.name}</p>
-                                                    </div>
-                                                ))
-                                            }<br></br>
-                                        </>
-                                    ))
-                                }
-                            </div>
-                            <div className="column">
-                                <div className="colTitle">OTHERS</div>
-                                {
-                                    others.map((subType, idx) => (
-                                        <>
-                                            <p key={idx} className="colSubTitle">{subType.title}</p>
-                                            {
-                                                subType.list.map((entry, i) => (
-                                                    <div className="badge">
-                                                        {
-                                                            entry.badge && <img className="skillbadge" style={entry.badgeColor && { backgroundColor: entry.badgeColor }} src={entry.badge && entry.badge} alt="" />
-                                                        }
-                                                        <p key={i} style={entry.textColor ? { backgroundColor: "transparent", color: entry.textColor } : { backgroundColor: entry.nameColor }} className="skillEntry">{entry.name}</p>
-                                                    </div>
-                                                ))
-                                            }<br></br>
-                                        </>
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    </div>
+                <div className="contentContainer">
+                     <div className="contentSkill">
+                         <div className="content__left">
+                            <div className="colTitle">LANGUAGES/DATABASES</div>
+                            {
+                                languages.map((lanType, idx) => (
+                                    <>
+                                        <p key={idx} className="colSubTitle">{lanType.title}</p>
+                                        {
+                                            lanType.list.map((entry, i) => (
+                                                <div className="badge">
+                                                    {
+                                                        entry.badge && <img className="skillbadge" style={entry.badgeColor && {backgroundColor: entry.badgeColor}} src={entry.badge && entry.badge} alt="" />
+                                                    }
+                                                    <p key={i} style={entry.textColor ? {backgroundColor: "transparent", color: entry.textColor} : {backgroundColor: entry.nameColor}} className="skillEntry">{entry.name}</p>
+                                                </div>
+                                            ))
+                                        }<br></br>
+                                    </>
+                                ))
+                            }
+                         </div>
+                         <div className="content__mid">
+                            <div className="colTitle">TOOLS/FRAMEWORKS</div>
+                            {
+                                toolsFrameworks.map((subType, idx) => (
+                                    <>
+                                        <p key={idx} className="colSubTitle">{subType.title}</p>
+                                        {
+                                            subType.list.map((entry, i) => (
+                                                <div className="badge">
+                                                    {
+                                                        entry.badge && <img className="skillbadge" style={entry.badgeColor && {backgroundColor: entry.badgeColor}} src={entry.badge && entry.badge} alt="" />
+                                                    }
+                                                    <p key={i} style={entry.textColor ? {backgroundColor: "transparent", color: entry.textColor} : {backgroundColor: entry.nameColor}} className="skillEntry">{entry.name}</p>
+                                                </div>
+                                            ))
+                                        }<br></br>
+                                    </>
+                                ))
+                            }
+                         </div>
+                         <div className="content__right">
+                            <div className="colTitle">COLLABORATION</div>
+                            {
+                                others.map((subType, idx) => (
+                                    <>
+                                        <p key={idx} className="colSubTitle">{subType.title}</p>
+                                        {
+                                            subType.list.map((entry, i) => (
+                                                <div className="badge">
+                                                    {
+                                                        entry.badge && <img className="skillbadge" style={entry.badgeColor && {backgroundColor: entry.badgeColor}} src={entry.badge && entry.badge} alt="" />
+                                                    }
+                                                    <p key={i} style={entry.textColor ? {backgroundColor: "transparent", color: entry.textColor} : {backgroundColor: entry.nameColor}} className="skillEntry">{entry.name}</p>
+                                                </div>
+                                            ))
+                                        }<br></br>
+                                    </>
+                                ))
+                            }
+                         </div>
+                     </div>
                 </div>
-                </div>
-                )
+            </div>
+        </div>
+    )
 }
 
                 export default Skills;
