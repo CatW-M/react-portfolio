@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import profile from '../../assets/images/Profileyard.png';
+import ContactLogo from '../../assets/images/ContactLogo.png';
 import ContactAlert from './ContactAlert';
 import ContactForm from './ContactForm';
 import AnimatedLetters from '../AnimatedLetters';
@@ -36,9 +37,9 @@ const Contact = () => {
           </p>
           {showAlert ? <ContactAlert
           alertContent={alertContent}
-        setShowAlert={setShowAlert} /> : <ContactForm
-        setAlertContent={setAlertContent}
-      setShowAlert={setShowAlert} />}
+          setShowAlert={setShowAlert} /> : <ContactForm
+          setAlertContent={setAlertContent}
+          setShowAlert={setShowAlert} />}
         </div>
         <div className='image-wrap'>
             <div className='info-image'>
@@ -46,6 +47,7 @@ const Contact = () => {
             </div>
             <div className='profpic-container'>
             <img src={profile} height="500" alt="Cat W-M" />
+            <img className="logo" src={ContactLogo} style={{width: '22em'}} alt="CWM Logo" />
 
             </div>
         </div>
