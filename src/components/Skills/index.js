@@ -97,7 +97,7 @@ const Skills = () => {
                 { name: "Time Management", nameColor: "green" },
                 { name: "Expansion Mindset", nameColor: "#4fd6cf" },
                 { name: "Communication", nameColor: "darkgrey" },
-                { name: "Collaboration", nameColor: "yellow" }
+                { name: "Collaboration", nameColor: "#d9c548" }
             ]
             },
     ]
