@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './index.scss';
 import Logo from '../../assets/images/Logo1.png';
 import LogoSubTitle from '../../assets/images/Sublogo.png';
-import Resume from '../../assets/images/CAW Software Eng Resume.pdf';
+import Resume from '../../assets/images/CwmResume010523.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
