@@ -35,7 +35,7 @@ const About = () => {
                     </h1>
                     <p>
                         I enjoy breaking big, complex things down into smaller, more manageable pieces - you could say I have a recursive approach to problems. My methodical approach, and affection for Javascript, led me to 
-                        this field. I will complete a 6-month software engineering immersive bootcamp in December 2022, one of the best decisions I've made in my career. 
+                        this field. I completed a 6-month software engineering immersive bootcamp in December 2022, one of the best decisions I've made in my career. 
                     </p>
                     <p align="LEFT">
                     I will find the resources to get the job done or problem solved. I am looking to join an organization where my strong work-ethic, unique background, and strong technical skills will be valued. My previous experience as a high school science teacher has 
