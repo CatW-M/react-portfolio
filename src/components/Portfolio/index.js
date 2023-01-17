@@ -3,6 +3,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import Voluntiers from '../../assets/images/Voluntiers.png';
 import Bookbean from '../../assets/images/BookBean.png';
 import Gumbo from '../../assets/images/GumbosGame.png';
+import Simpli from '../../assets/images/simplihive.png';
 import Loader from 'react-loaders';
 import "./index.scss";
 
@@ -50,6 +51,23 @@ const Portfolio = () => {
                                     className="btn"
                                     onClick={() => window.open("https://github.com/CatW-M/voluntiers-api")}
                                 >API Git</button>
+                            </div>
+                        </div>
+                        <div className="image-box-mid">
+                            <img src={Simpli}
+                                className="portfolio-image"
+                                alt="portfolio" />
+                            <div className="content">
+                                <p className="title">Simplihive</p>
+                                <h4 className="description">Django-Python App using PostgreSQL and AWS for data storage. custom middleware. Kind of like Tinder for your stuff - users upload items they are trying to decide on and other users vote on what to do with the item.</h4>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://simplihive.herokuapp.com/")}
+                                >View</button>
+                                <button
+                                    className="btn"
+                                    onClick={() => window.open("https://github.com/CatW-M/simplihive")}
+                                >Github</button>
                             </div>
                         </div>
                         <div className="image-box-mid">
