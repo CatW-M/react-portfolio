@@ -35,7 +35,7 @@ const Skills = () => {
         {
             title: "Programming Languages",
             list: [
-                { name: "JavaScript ❤️", badge: javascript, nameColor: "#d9c548" },
+                { name: "JavaScript", badge: javascript, nameColor: "#d9c548" },
                 { name: "Python", badge: python },
                 { name: "HTML", badge: htmlbadge, nameColor: "orange" },
                 { name: "CSS", badge: css },
