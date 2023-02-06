@@ -6,8 +6,10 @@ import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import './App.scss'
+import useTitle from './hooks/useTitle';
 
 function App() {
+  useTitle('C. Wheeler-Mushlin Portfolio')
   return (
     <>
       <Routes>
