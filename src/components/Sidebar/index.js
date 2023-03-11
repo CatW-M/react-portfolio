@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import './index.scss';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logostandalone.png';
 import Resume from '../../assets/images/CwmResume010523.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -104,32 +104,36 @@ const Sidebar = () => {
       </div>
       <div className="separate">
         <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/compsciwheeler"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/CatW-M"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
+          <div className="navLink">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/compsciwheeler"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  color="#4d4d4e"
+                  className="anchor-icon"
+                />
+              </a>
+            </li>
+          </div>
+          <div className="navLink">
+            <li>
+              <a
+                href="https://github.com/CatW-M"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  color="#4d4d4e"
+                  className="anchor-icon"
+                />
+              </a>
+            </li>
+          </div>
         </ul>
         <FontAwesomeIcon
           onClick={() => setShowNav(true)}
