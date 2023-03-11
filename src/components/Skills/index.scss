@@ -1,108 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Quicksand&display=swap');
 .container-skills {
-    margin-top: 50px;
-    margin-left: 100px;
-    h1 {
-        font-size: 53px;
-        font-family: 'Coolvetica';
-        color: #ffd700;
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 40px;
-        left: -10px;
-  
-        &:before {
-          font-family: 'La Belle Aurore', cursive;
-          color: #ffd700;
-          font-size: 18px;
-          position: absolute;
-          margin-top: -10px;
-          left: -10px;
-          opacity: 0.6;
-          line-height: 18px;
-        }
-  
-        &:after {
-          font-family: 'La Belle Aurore', cursive;
-          color: #ffd700;
-          font-size: 18px;
-          line-height: 18px;
-          position: absolute;
-          left: -30px;
-          bottom: -20px;
-          margin-left: 20px;
-          opacity: 0.6;
-        }
-}
+  margin-top: 50px;
+  margin-left: 100px;
+  h1 {
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #001d46;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
 
-.skillContainer {
+    &:before {
+      font-family: 'La Belle Aurore', cursive;
+      color: #001d46;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+
+    &:after {
+      font-family: 'La Belle Aurore', cursive;
+      color: #7d0d6a;
+      font-size: 18px;
+      line-height: 18px;
+      position: absolute;
+      left: -30px;
+      bottom: -20px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  .skillContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-}
+  }
 
-.headerContainer {
+  .headerContainer {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-self: center;
     align-items: center;
     position: static;
-}
+  }
 
-.headerIcon {
+  .headerIcon {
     width: 55px;
     height: 55px;
     margin-top: 5px;
     margin-right: 5px;
     z-index: 100;
-}
+  }
 
-.headerTitle {
+  .headerTitle {
     line-height: 60px;
     font-size: 40px;
     margin: 0;
     font-family: 'Nova Mono', monospace;
-}
+  }
 
-.header {
+  .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+  }
 
-.divider {
+  .divider {
     display: block;
-    background-color: #B3F6DE;
+    background-color: #b3f6de;
     width: 160px;
     height: 5px;
     margin-left: 22px;
     margin-top: -8px;
     border-radius: 10px;
     z-index: -100;
-}
+  }
 
-.contentContainer {
+  .contentContainer {
     /* width: 65%;
     height: 100vh; */
     display: flex;
     margin-top: -100px;
     align-items: center;
     position: relative;
-}
+  }
 
-.backgroundImg {
+  .backgroundImg {
     align-self: center;
     width: 900px;
     height: 850px;
     margin-left: 95px;
     object-fit: contain;
     border-radius: 36px;
-}
+  }
 
-.contentSkill {
+  .contentSkill {
     display: flex;
     // flex-direction: row;
     position: relative;
@@ -112,7 +112,7 @@
     top: 150px;
     left: 13%;
   }
-  
+
   .content__left {
     border-right: 2px solid white;
     font-size: 1.5em;
@@ -120,12 +120,12 @@
     width: 33%;
     // height: 75vh;
     animation: pulse 1s;
-        &:nth-of-type(1) {
-          animation-delay: 0.1s;
-        }
-}
+    &:nth-of-type(1) {
+      animation-delay: 0.1s;
+    }
+  }
 
-.content__mid {
+  .content__mid {
     border-right: 2px solid white;
     justify-content: center;
     width: 33%;
@@ -134,9 +134,9 @@
     &:nth-of-type(1) {
       animation-delay: 1.2s;
     }
-}
+  }
 
-.content__right {
+  .content__right {
     justify-self: center;
     width: 33%;
     height: 75vh;
@@ -144,45 +144,45 @@
     &:nth-of-type(1) {
       animation-delay: 1.3s;
     }
-}
+  }
 
-.colTitle {
+  .colTitle {
     text-align: center;
-    color:#ffd700;
+    color: #001d46;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: 600;
     font-size: 20px;
     overflow-wrap: break-word;
     margin-bottom: 20px;
-}
+  }
 
-.colSubTitle {
+  .colSubTitle {
     font-size: 15px;
     margin: 5px;
-    color: #129f6d;
+    color: #7d0d6a;
     font-weight: 900;
     font-family: 'Quicksand', sans-serif;
-}
+  }
 
-.badge {
+  .badge {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 3px;
-}
+  }
 
-.skillbadge {
-    width: 25px;
-    height: 19px;
+  .skillbadge {
+    width: 30px;
+    height: auto;
     object-fit: contain;
     background-color: #555;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-}
+  }
 
-.skillEntry {
-    font-size: 13px;
+  .skillEntry {
+    font-size: 18px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     margin: 2px 2px 2px 0px;
@@ -192,83 +192,93 @@
     color: white;
     font-weight: 600;
     background-color: rgb(0, 126, 198);
-}
+  }
 
-@media screen and (max-width: 960px) {  
+  @media screen and (max-width: 960px) {
     .contentSkill {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        width: 75%;
-        justify-content: center;
-        top: 150px;
-        left: 13%;
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      width: 85%;
+      justify-content: center;
+      top: 150px;
+      left: 13%;
     }
-}
+  }
 
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .contentSkill {
-        background: linear-gradient(0.5turn, #ffffff, rgba(250, 240, 242), rgba(223, 254, 255));
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        width: 100%;
-        justify-content: center;
-        top: 150px;
-        left: 0%;
+      background: linear-gradient(
+        0.5turn,
+        #ffffff,
+        rgba(250, 240, 242),
+        rgba(223, 254, 255)
+      );
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      top: 150px;
+      left: 0%;
     }
-}
+  }
 
-
-@media screen and (max-width: 420px) {
-     .skillContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
+  @media screen and (max-width: 420px) {
+    .skillContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: fit-content;
     }
-    
+
     .contentSkill {
-        background: linear-gradient(0.5turn, #a4c7f4, rgba(250, 240, 242), rgba(223, 254, 255));
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        justify-content: center;
-        height: fit-content;
-        margin-left: -50px;
-        /* top: 0px;
+      background: linear-gradient(
+        0.5turn,
+        #a4c7f4,
+        rgba(250, 240, 242),
+        rgba(223, 254, 255)
+      );
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      justify-content: center;
+      height: fit-content;
+      margin-left: -50px;
+      /* top: 0px;
         left: 0px; */
-        top: 110px;
+      top: 110px;
     }
 
     .content__left {
-        border-right: 2px solid white;
-        justify-self: center;
-        width: 100%;
-        height: fit-content;
+      border-right: 2px solid white;
+      justify-self: center;
+      width: 100%;
+      height: fit-content;
     }
-    
+
     .content__mid {
-        border-right: 2px solid white;
-        justify-content: center;
-        width: 100%;
-        height: fit-content;
+      border-right: 2px solid white;
+      justify-content: center;
+      width: 100%;
+      height: fit-content;
     }
-    
+
     .content__right {
-        justify-self: center;
-        width: 100%;
-        height: fit-content;
+      justify-self: center;
+      width: 100%;
+      height: fit-content;
     }
 
     .colTitle {
-        text-align: center;
-        color: #19170d;
-        font-family: 'Julius Sans One', sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+      text-align: center;
+      color: #19170d;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      //   margin-top: 20px;
+      //   margin-bottom: 20px;
     }
-  }}
+  }
+}
