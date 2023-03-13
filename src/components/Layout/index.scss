@@ -97,6 +97,7 @@
 @media screen and (max-width: 1200px) {
   .page {
     position: initial;
+    padding-top: 30px;
   }
 
   .container {
@@ -106,7 +107,7 @@
 
     &.contact-page,
     &.about-page,
-    &.portfolio-page,
+    // &.portfolio-page,
     &.skills-page {
       .text-zone {
         position: initial;
@@ -118,26 +119,32 @@
       }
     }
 
-    // &.portfolio-page {
-    //   // width: 100%;
-    //   // padding: 20px;
-    //   box-sizing: border-box;
+    &.portfolio-page {
+      width: 75%;
+      padding: 10px;
+      box-sizing: border-box;
+      display: block;
 
-    //   h1.page-title {
-    //     // margin-left: -80px;
-    //     // margin-top: -80px;
-    //   }
+      .nav {
+        width: fit-content;
+      }
+      // margin-left: -10px;
 
-    //   .image-box-left,
-    //   .image-box-mid,
-    //   .image-box-right {
-    //     flex: 100%;
-    //     // height: 300px;
-    //     padding: 10px;
-    //     // max-width: 75%;
-    //     overflow: auto;
-    //   }
-    // }
+      // h1.page-title {
+      //   // margin-left: -80px;
+      //   // margin-top: -80px;
+      // }
+
+      .image-box-left,
+      .image-box-mid,
+      .image-box-right {
+        flex: 100%;
+        height: 400px;
+        padding: 10px;
+        max-width: 100%;
+        overflow: auto;
+      }
+    }
   }
 
   .stage-cube-cont {

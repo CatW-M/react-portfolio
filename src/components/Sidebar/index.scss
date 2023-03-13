@@ -162,6 +162,11 @@ $link-color: #7d0d6a;
   display: none;
 }
 
+.hamburger-icon,
+.close-icon {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
@@ -178,14 +183,21 @@ $link-color: #7d0d6a;
       width: 100%;
       top: 0;
       left: 0;
-      background: #181818;
+      padding-top: 20px;
+      background: linear-gradient(
+        0.5turn,
+        #ffffff,
+        rgba(250, 240, 242),
+        rgba(223, 254, 255)
+      );
+      font-size: 18px;
       height: 100%;
       margin: 0;
       z-index: 2;
-      //   position: fixed;
+      position: fixed;
 
       &.mobile-show {
-        display: block;
+        display: inline-block;
       }
 
       a {
@@ -202,7 +214,7 @@ $link-color: #7d0d6a;
       }
 
       a svg {
-        opacity: 1 !important;
+        opacity: 0.1 !important;
       }
     }
 
