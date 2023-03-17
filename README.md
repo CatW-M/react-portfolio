@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Catherine Wheeler-Mushlin's Portfolio Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app) and styled with [sass](https://sass-lang.com/). Created in 2022, this application is continually updated and improved. Current deployment is hosted by [Netlify](https://www.netlify.com/) and can be viewed at [wheelermushlin.com](https://www.wheelermushlin.com/).
 
-## Available Scripts
+Please contact me by [email](mailto:wheelermushlin@gmail.com) with any questions or issues.
 
-In the project directory, you can run:
+Special thanks to [Yash Falke](https://github.com/yashfalke77)for sharing his portfolio on Youtube, providing early inspiration on this project.
+
+## Optimizations
 
 ### `npm start`
 
